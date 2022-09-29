@@ -1,18 +1,7 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to Metric Converter APP. 
 
-## Folder Structure
+## ________________
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Converting different units of metric systems Converting different units of metric with this app. The user will choose between 6 different metric units. The user will have to type in their choices. For example to convert pounds to kilograms they would have to press option 1 and put in a number the want to convert. Then the app will convert from pounds to kilograms and you will have to continue this method until they make it to option 6 and the app will continue until the user press -1 to end the program and will thank the user for using the app. Also, if the user press an option other than number 1-6 the program will give the users a warning stating " Please choose one of the available options, choose number 1-6 to be properly converted!".dependencies).

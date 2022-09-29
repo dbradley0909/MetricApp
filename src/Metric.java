@@ -91,11 +91,14 @@ public class Metric {
               sourceMetric = myStrArray[1];
               targetMetric = myStrArray[3];
               metricConverter(metricNum, sourceMetric, targetNum, targetMetric);
+              
           }
+        
       }
   }
 
   public static float metricConverter(float sourceNum, String sourceMetric, float targetNum, String targetMetric){
+    while( true ){
     targetNum = 0;
       switch(sourceMetric){
           case "km":
@@ -104,7 +107,7 @@ public class Metric {
                   targetNum = sourceNum * 1000;
                   break;
               case "mile":
-                  targetNum = (float) (sourceNum * 0.62);
+                  targetNum = (float)(sourceNum * 0.62);
                   break;
               default:
                   break;
@@ -122,10 +125,12 @@ public class Metric {
           case "liters":
           switch(targetMetric){
               case "gallon":
-                targetNum = (float)(sourceNum * 0.26);
+                  targetNum = (float)(sourceNum * 0.26);
                   break;
-              default: 
+              default:
+                  System.out.println("I don't know that, please give me something else"); 
                   break; 
+          
           }
           break;
           case "celsius":
@@ -138,13 +143,13 @@ public class Metric {
           }
           break;
           default:
-          System.out.println("Metric choice is not understood by program, please try again!"); 
+          System.out.println("Metric choice is not understood by program, please try again!!!"); 
               break; 
               
       }
       System.out.printf("%.2f %s = %.2f %s%n", sourceNum, sourceMetric, targetNum, targetMetric);
       return targetNum;
-      
+    }
   }
   
 }
